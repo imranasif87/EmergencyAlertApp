@@ -60,21 +60,21 @@
 
     <script type="text/javascript">
         function sendEmail() {
-            // var templateParams = {
-            //     to_name: 'All (Imran, Kashif and Arslan)',
-            //     from_name: 'Amma Jaan',
-            //     message: 'Please call to Amma ASAP.',
-            //     to_email: 'sheikhimranasif@gmail.com;arslan.slamslogic@gmail.com;asifkashif58@gmail.com' // for multiple please ';' between email ids
-            // };
+            var templateParams = {
+                to_name: 'All (Imran, Kashif and Arslan)',
+                from_name: 'Amma Jaan',
+                message: 'Please call to Amma ASAP.',
+                to_email: 'sheikhimranasif@gmail.com;arslan.slamslogic@gmail.com;asifkashif58@gmail.com' // for multiple please ';' between email ids
+            };
 
-            // emailjs.send('service_e6i1y07', 'template_yssaw4d', templateParams)
-            //     .then(function (response) {
-            //         console.log('SUCCESS!', response.status, response.text);
-            //         document.getElementById('loader').style.display = 'none';
-            //         alert('Email sent....')
-            //     }, function (error) {
-            //         console.log('FAILED...', error);
-            //     });
+            emailjs.send('service_e6i1y07', 'template_yssaw4d', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('loader').style.display = 'none';
+                    alert('Email sent....')
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
             
         }
 
